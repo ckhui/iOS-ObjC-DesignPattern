@@ -2,16 +2,18 @@
 
 tutotial follow :https://www.raywenderlich.com/46988/ios-design-patterns
 
-Design Patterns
+### Design Patterns
 - reusable solutions to common problems in software design
 - templates - to help you write code that’s easy to understand and reuse
 
 
 Creational : Singleton and Abstract Factory
+
 Structural : MVC, Decorator, Adapter, Facade and Composite
+
 Behavioural : Observer , Memento, Chain of Responsibility and Command
 
-MVC - most-used designed pattern
+## MVC - most-used designed pattern
 —classifies objects according to their general role 
 — encourages clean separation of code base on role 
 
@@ -21,56 +23,57 @@ Controller - mediator and coordinates all the work. Access the data from Model a
 
 ￼
 
-Singleton
+## Singleton
 - only one instance exists for a given class and there’s a global access point to that instance.
 Usually use lazy loading when first creation.
 
 
-Facade
+## Facade
 — provides a single interface to a complex subsystem.
 — e.g. exposing the user to only one simple unified API rather than multiple classes and API
 
 ￼
 
 
-Decorator
+## Decorator
 — add behaviour and responsibilities to an object without modifying its code.
 — e.g. Category and Delegation
 
-Category — adde methods to existing classes without subclassing (extension ?? )
+#Category — adde methods to existing classes without subclassing (extension ?? )
 — Help keep the method organised and separated into sections.
 
-Delegation — is a mechanism in which one object acts on behalf of another object
+#Delegation — is a mechanism in which one object acts on behalf of another object
 
-Adaptor — allows classes with incompatible interface to work together. 
+##Adaptor — allows classes with incompatible interface to work together. 
 eg. Using protocol to create uiview , UITableView
 
 
-Observer - one object notifies other objects of any state changes
+##Observer - one object notifies other objects of any state changes
 Often used to notify interested objects when a property has changed
 — usual implementation, requires an observer registers interest int he state of another object
 e.g. Apple’s Push Notification service
 — MVC,need to allow Model to communicate with View without direct reference between them, using Observer
 E.g. Notifications and Key-Value Observing
 
-Notification
+#Notification
 Notifications are base on a subscribe-and-publish model
 Publisher send message to subscribers/listeners
 
-KVO (key-value observing)
+#KVO (key-value observing)
 — an object can ask to be notified of any changes to a specific property
 
 
-Memento
+##Memento
 — captures and externalise an object’s internal state.
 — save the data somewhere
 e.g. User default 
 
-One of the Memento pattern
+#One of the Memento pattern
 Archiving — coverts an object into a stream that can be saved and later restored without exposing private properties to external classes.
 i.e. conforming to NSCoding protocol
 
-Command
+
+##Command
 — encapsulates a request or action as an object.
 — the encapsulated request can be passed between object, stored for later, modified dynamically, or placed into a queue.
 e.g. Target-Action mechanism and Invocation
