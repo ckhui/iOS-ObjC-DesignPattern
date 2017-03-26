@@ -39,41 +39,42 @@ Usually use lazy loading when first creation.
 — add behaviour and responsibilities to an object without modifying its code.
 — e.g. Category and Delegation
 
-#Category — adde methods to existing classes without subclassing (extension ?? )
+### Category — adde methods to existing classes without subclassing (extension ?? )
 — Help keep the method organised and separated into sections.
 
-#Delegation — is a mechanism in which one object acts on behalf of another object
+### Delegation — is a mechanism in which one object acts on behalf of another object
 
-##Adaptor — allows classes with incompatible interface to work together. 
+## Adaptor — allows classes with incompatible interface to work together. 
 eg. Using protocol to create uiview , UITableView
 
 
-##Observer - one object notifies other objects of any state changes
+## Observer - one object notifies other objects of any state changes
 Often used to notify interested objects when a property has changed
 — usual implementation, requires an observer registers interest int he state of another object
 e.g. Apple’s Push Notification service
 — MVC,need to allow Model to communicate with View without direct reference between them, using Observer
 E.g. Notifications and Key-Value Observing
 
-#Notification
+### Notification
 Notifications are base on a subscribe-and-publish model
 Publisher send message to subscribers/listeners
 
-#KVO (key-value observing)
+### KVO (key-value observing)
 — an object can ask to be notified of any changes to a specific property
 
 
-##Memento
+## Memento
 — captures and externalise an object’s internal state.
 — save the data somewhere
 e.g. User default 
 
-#One of the Memento pattern
-Archiving — coverts an object into a stream that can be saved and later restored without exposing private properties to external classes.
+
+### Archiving — One of the Memento pattern
+coverts an object into a stream that can be saved and later restored without exposing private properties to external classes.
 i.e. conforming to NSCoding protocol
 
 
-##Command
+## Command
 — encapsulates a request or action as an object.
 — the encapsulated request can be passed between object, stored for later, modified dynamically, or placed into a queue.
 e.g. Target-Action mechanism and Invocation
