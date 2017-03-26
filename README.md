@@ -21,7 +21,8 @@ Model - The object holes your application data and define how to manipulate it (
 View - visual representation of the Model, controls the interaction with user. (e.g. UIView subclasses)
 Controller - mediator and coordinates all the work. Access the data from Model and Display it with the View. Listen to event and manipulates the data ad necessary. (e.g. ViewController)
 
-￼
+![MVC image](/images/MVC.png)
+
 
 ## Singleton
 - only one instance exists for a given class and there’s a global access point to that instance.
@@ -31,6 +32,8 @@ Usually use lazy loading when first creation.
 ## Facade
 — provides a single interface to a complex subsystem.
 — e.g. exposing the user to only one simple unified API rather than multiple classes and API
+
+![Facde image](/images/Facade.png)
 
 ￼
 
